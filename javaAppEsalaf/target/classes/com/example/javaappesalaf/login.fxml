@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.example.javaappesalaf.LoginController">
+   <children>
+      <ImageView fitHeight="416.0" fitWidth="328.0" layoutX="-8.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/logInView1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="57.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/money-flow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="92.0" layoutY="327.0" text="ESALAF" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="316.0" layoutY="-5.0" prefHeight="407.0" prefWidth="288.0" style="-fx-background-color: #efebef;">
+         <children>
+            <TextField fx:id="tfLoginUsername" layoutX="65.0" layoutY="94.0" promptText="User name" style="-fx-border-color: #633962; -fx-border-width: 2; -fx-border-radius: 3%;" />
+            <TextField fx:id="tfLoginPassword" layoutX="65.0" layoutY="150.0" promptText="password" style="-fx-border-color: #633962; -fx-border-width: 2; -fx-border-radius: 3%;" />
+            <Button layoutX="115.0" layoutY="217.0" mnemonicParsing="false" onAction="#logIn" style="-fx-background-color: #633962; -fx-border-radius: 5%;" text="logIn" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="LabelLoginUsername" layoutX="70.0" layoutY="123.0" prefHeight="17.0" prefWidth="146.0" textFill="RED" />
+            <Label fx:id="LabelLoginPassword" layoutX="69.0" layoutY="179.0" prefHeight="17.0" prefWidth="146.0" textFill="RED" />
+            <Label layoutX="41.0" layoutY="350.0" prefHeight="17.0" prefWidth="130.0" text="don't have an account?" />
+            <Label layoutX="167.0" layoutY="350.0" text="Create one" textFill="#a64d93">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="720.0" style="-fx-background-color: #f4f4f4;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaappesalaf.ProduitController">
+    <children>
+        <Pane prefHeight="600.0" prefWidth="722.0" style="-fx-background-color: #dce4eb;">
+            <children>
+                <ImageView fitHeight="55.0" fitWidth="48.0" layoutX="6.0" layoutY="6.0" onMouseClicked="#BackHome" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@pictures/back-arrow.png" />
+                    </image>
+                </ImageView>
+                <TableView fx:id="tvProduit" layoutX="303.0" layoutY="30.0" onMouseClicked="#handleMouseAction" prefHeight="500.0" prefWidth="390.0">
+                    <columns>
+                        <TableColumn fx:id="colId" prefWidth="114.0" text="id" />
+                        <TableColumn fx:id="colNom" prefWidth="145.0" text="nom" />
+                        <TableColumn fx:id="colPrix" prefWidth="130.0" text="Prix" />
+                    </columns>
+                </TableView>
+                <VBox layoutX="18.0" layoutY="73.0" prefHeight="167.0" prefWidth="73.0" spacing="20.0">
+                    <children>
+                        <Label text="ID">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="10.0" text="Nom">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="49.0" text="Prix">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </VBox>
+                <VBox layoutX="83.0" layoutY="71.0" prefHeight="171.0" prefWidth="196.0" spacing="12.0">
+                    <children>
+                        <TextField fx:id="tfId" />
+                        <TextField fx:id="tfNom" />
+                        <TextField fx:id="tfPrix" />
+                    </children>
+                </VBox>
+                <Button fx:id="deleteButtonC" layoutX="41.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.0" prefWidth="83.0" style="-fx-background-color: #5a7699;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Button>
+                <Button fx:id="insertButtonC" layoutX="41.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.0" prefWidth="83.0" style="-fx-background-color: #5a7699;" text="Insert" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Button>
+                <Button fx:id="updateButtonC" layoutX="140.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.0" prefWidth="83.0" style="-fx-background-color: #5a7699;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Button>
+            <Button layoutX="140.0" layoutY="341.0" mnemonicParsing="false" onAction="#ClearTF" prefHeight="48.0" prefWidth="83.0" style="-fx-background-color: #5a7699;" text="Clear" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Button>
+            </children>
+        </Pane>
+
+    </children>
+</AnchorPane>

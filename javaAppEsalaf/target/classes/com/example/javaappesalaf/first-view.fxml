@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaappesalaf.FirstViewController">
+   <children>
+      <AnchorPane layoutX="185.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #d1dce5;">
+         <children>
+            <Pane layoutX="27.0" layoutY="80.0" prefHeight="100.0" prefWidth="342.0" style="-fx-background-color: #f4f4f4; -fx-border-color: #ffa566; -fx-border-radius: 2%5%; -fx-border-width: 2;">
+               <children>
+                  <Button layoutX="27.0" layoutY="23.0" mnemonicParsing="false" onAction="#afficheProduits" prefHeight="54.0" prefWidth="89.0" style="-fx-background-color: #2473b5; -fx-border-color: #19507e; -fx-border-width: 3; -fx-border-radius: 5%;" text="Produits" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="47.0" fitWidth="89.0" layoutX="274.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/dairy-products.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="293.0" fitWidth="289.0" layoutX="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/fanous.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="27.0" layoutY="189.0" prefHeight="100.0" prefWidth="342.0" style="-fx-background-color: #f4f4f4; -fx-border-color: #ffa566; -fx-border-radius: 2%5%; -fx-border-width: 2;">
+               <children>
+                  <Button layoutX="27.0" layoutY="23.0" mnemonicParsing="false" onAction="#afficheClient" prefHeight="54.0" prefWidth="89.0" style="-fx-background-color: #2473b5; -fx-border-color: #19507e; -fx-border-width: 3; -fx-border-radius: 5%;" text="Clients" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="47.0" fitWidth="89.0" layoutX="274.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/client.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <ImageView fitHeight="122.0" fitWidth="150.0" layoutX="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/LOGO.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="159.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/fanousOrg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
